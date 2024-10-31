@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #34623F;
+    font-family: "Alumni sans pinstripe",sans-serif;
+    
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 300px 300px;
+    gap: 20px;
+    padding: 20px;
+ 
+}
+
+.grid-image{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.grid-item{
+    background-color: #607744;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #607744;
+    object-fit: cover;
+}
+
+
+
+.item1{
+    grid-column: span 2;
+
+ 
+}
+
+.item2{
+    grid-column: span 1;
+  
+  
+}
+
+.item3{
+    grid-column: span 1;
+    grid-row: span 1;
+
+}
+
+.item4{
+    grid-column: span 1;
+
+   
+}
+
+.item5{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item6{
+     grid-row: span 2;
+}
+
+.item7{
+    grid-column: span 1;
+}
+
+.item8{
+    grid-column: span 1;
+}
+
+.item9{
+    grid-column: span 1;
+}
+
+.center-text{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 800;
+    color: #1E2F23;
+    font-style: italic;
+}

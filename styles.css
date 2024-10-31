@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Onest:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 *{
     margin: 0;
@@ -6,8 +7,10 @@
     box-sizing: border-box;
 }
 
+
+
 body{
-    background-color: #34623F;
+    background-image: linear-gradient(to top, #4e8a3e,#467c37,#3c6930,#315527,#284420);
     font-family: "Alumni sans pinstripe",sans-serif;
     
 }
@@ -18,12 +21,13 @@ main{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    
 }
 
 .grid-container{
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 300px 300px;
+    grid-auto-rows: 1fr;
     gap: 20px;
     padding: 20px;
  
@@ -36,12 +40,16 @@ main{
 }
 
 .grid-item{
-    background-color: #607744;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/2853027-6ca7f9fc_1024_1024.webp);
     overflow: hidden;
     border-radius: 25px;
-    box-shadow: 5px 5px 5px #607744;
+    box-shadow: rgba(0, 0, 0, 0.75) 10px 5px 5px 0px;
+    border: 2px solid black;
     object-fit: cover;
 }
+
+
 
 
 
@@ -74,7 +82,20 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
+}
+
+p{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 10px black;
+    font-weight: 400;
+    font-family: "Onest",sans-serif;
+    
 }
 
 .item6{
@@ -99,6 +120,6 @@ main{
     justify-content: center;
     font-size: 100px;
     font-weight: 800;
-    color: #1E2F23;
+    color: #ffffff;
     font-style: italic;
 }
